@@ -118,7 +118,7 @@ onMounted(() => {
 
 <template>
   <div class="relative flex flex-wrap space-x-0">
-    <div class="w-1/4">
+    <div class="sm:w-1/4 w-full">
       <div class="toolbox">
         <div class="sticky bg-white p-2 shadow">
           <div class="mb-4 flex items-center">
