@@ -1,4 +1,15 @@
-<script setup></script>
+<script setup>
+import { onMounted, ref } from 'vue';
+import { apiCityData } from '../utlis/api';
+
+const cityData = ref({});
+
+onMounted(async () => {
+  const res = await apiCityData();
+  cityData.value = res?.data?.features;
+  console.log(cityData.value);
+});
+</script>
 
 <template>
   <div class="relative space-x-0 flex flex-wrap">
